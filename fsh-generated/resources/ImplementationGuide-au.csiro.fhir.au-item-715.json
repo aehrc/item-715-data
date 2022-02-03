@@ -1,0 +1,104 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "au.csiro.fhir.au-item-715",
+  "url": "https://aehrc.com/fhir/item715/ImplementationGuide/au.csiro.fhir.au-item-715",
+  "version": "0.1.0",
+  "name": "item715data",
+  "title": "Aboriginal and Torres Strait Islander health check",
+  "status": "draft",
+  "publisher": "CSIRO",
+  "contact": [
+    {
+      "name": "CSIRO",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://github.com/aehrc"
+        },
+        {
+          "system": "email",
+          "value": "Michael.Lawley@csiro.au"
+        }
+      ]
+    }
+  ],
+  "packageId": "au.csiro.fhir.au-item-715",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "dependsOn": [
+    {
+      "packageId": "hl7.fhir.au.base",
+      "version": "current",
+      "uri": "http://hl7.org.au/fhir/ImplementationGuide/hl7.fhir.au.base",
+      "id": "hl7_fhir_au_base"
+    },
+    {
+      "packageId": "au.csiro.fhir.au-primarycare",
+      "version": "current",
+      "uri": "https://aehrc.com/fhir/ImplementationGuide/au.csiro.fhir.au-primarycare",
+      "id": "au_csiro_fhir_au_primarycare"
+    },
+    {
+      "packageId": "hl7.fhir.uv.sdc",
+      "version": "current",
+      "uri": "http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc",
+      "id": "hl7_fhir_uv_sdc"
+    }
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "CapabilityStatement/AUItem715SearchRequirement"
+        },
+        "name": "715 Item Search Requirement",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CapabilityStatement/AUItem715SearchRequirementDescription"
+        },
+        "description": "Requirements for MBS 715 item form pre-population.",
+        "exampleBoolean": false,
+        "name": "AUITEM715SearchRequirement"
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/iLTCF"
+        },
+        "exampleBoolean": false,
+        "name": "interRAI Long-Term Care Facilities Assessment Form"
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/mbs715"
+        },
+        "exampleBoolean": false,
+        "name": "Aboriginal and Torres Strait Islander health check – Adults (25–49 years)"
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2021+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "ci-build"
+      }
+    ]
+  }
+}
