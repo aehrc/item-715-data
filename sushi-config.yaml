@@ -5,6 +5,7 @@
 id: au.csiro.fhir.au-item-715
 canonical: https://aehrc.com/fhir/item715
 name: item-715-data
+title: Aboriginal and Torres Strait Islander health check
 status: draft
 version: 0.1.0
 fhirVersion: 4.0.1
@@ -17,6 +18,7 @@ publisher:
 dependencies:
   hl7.fhir.au.base: current
   au.csiro.fhir.au-primarycare: current
+  hl7.fhir.uv.sdc: current
 
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
