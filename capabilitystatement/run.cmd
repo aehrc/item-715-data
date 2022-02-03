@@ -1,1 +1,0 @@
-Transform.exe ..\output\CapabilityStatement-AUItem715SearchRequirement.xml capabilitystatementNarrative.xslt > CapabilityStatement-AUItem715SearchRequirement.xml
