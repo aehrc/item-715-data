@@ -1,7 +1,7 @@
 {
   "resourceType": "ImplementationGuide",
   "id": "au.csiro.fhir.au-item-715",
-  "url": "https://aehrc.com/fhir/item715/ImplementationGuide/au.csiro.fhir.au-item-715",
+  "url": "https://aehrc.com/fhir/ImplementationGuide/au.csiro.fhir.au-item-715",
   "version": "0.1.0",
   "name": "item715data",
   "title": "Aboriginal and Torres Strait Islander health check",
@@ -50,18 +50,26 @@
     "resource": [
       {
         "reference": {
-          "reference": "CapabilityStatement/AUItem715SearchRequirement"
+          "reference": "StructureDefinition/AUItem715Cholesterol"
         },
-        "name": "715 Item Search Requirement",
+        "name": "AU Item 715 Cholesterol",
+        "description": "Cholesterol observation",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "CapabilityStatement/AUItem715SearchRequirementDescription"
+          "reference": "StructureDefinition/AUItem715HDLCholesterol"
         },
-        "description": "Requirements for MBS 715 item form pre-population.",
-        "exampleBoolean": false,
-        "name": "AUITEM715SearchRequirement"
+        "name": "AU Item 715 HDL Cholesterol",
+        "description": "HDL Cholesterol observation",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CapabilityStatement/AUItem715SearchRequirement"
+        },
+        "name": "Item 715 Search Requirement",
+        "exampleBoolean": false
       },
       {
         "reference": {

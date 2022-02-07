@@ -1,12 +1,12 @@
 {
   "resourceType": "CapabilityStatement",
   "id": "AUItem715SearchRequirement",
-  "url": "https://aehrc.com/fhir/item715/CapabilityStatement/AUItem715SearchRequirement",
-  "name": "AUITEM715SearchRequirement",
+  "url": "https://aehrc.com/fhir/CapabilityStatement/AUItem715SearchRequirement",
+  "name": "AUItem715SearchRequirement",
   "description": "Requirements for MBS 715 item form pre-population.",
   "status": "draft",
   "experimental": true,
-  "date": "2021-06-06",
+  "date": "2022-02-03",
   "kind": "requirements",
   "fhirVersion": "4.0.1",
   "format": [
@@ -16,7 +16,6 @@
   "rest": [
     {
       "mode": "server",
-      "documentation": "Requirements for 715 form pre-poulation",
       "security": {
         "cors": true,
         "service": [
@@ -34,7 +33,7 @@
       "resource": [
         {
           "type": "Patient",
-          "profile": "https://aehrc.com/fhir/item715/AUItem715Patient",
+          "profile": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCarePatient",
           "interaction": [
             {
               "code": "read",
@@ -73,129 +72,7 @@
           "searchParam": [
             {
               "name": "patient",
-              "definition": "http://hl7.org/fhir/SearchParameter/Condition-subject",
-              "type": "reference",
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ]
-            },
-            {
-              "name": "code",
-              "definition": "http://hl7.org/fhir/SearchParameter/Condition-code",
-              "type": "token",
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "MedicationStatement",
-          "profile": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicationStatement",
-          "interaction": [
-            {
-              "code": "read",
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ]
-            },
-            {
-              "code": "search-type",
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ]
-            }
-          ],
-          "searchParam": [
-            {
-              "name": "patient",
-              "definition": "http://hl7.org/fhir/SearchParameter/MedicationStatement-subject",
-              "type": "reference",
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "Immunization",
-          "profile": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareImmunisation",
-          "interaction": [
-            {
-              "code": "read",
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ]
-            },
-            {
-              "code": "search-type",
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ]
-            }
-          ],
-          "searchParam": [
-            {
-              "name": "patient",
-              "definition": "http://hl7.org/fhir/SearchParameter/Immunization-subject",
-              "type": "reference",
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "AllergyIntolerance",
-          "profile": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAllergyIntolerance",
-          "interaction": [
-            {
-              "code": "read",
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ]
-            },
-            {
-              "code": "search-type",
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ]
-            }
-          ],
-          "searchParam": [
-            {
-              "name": "patient",
-              "definition": "http://hl7.org/fhir/SearchParameter/AllergyIntolerance-subject",
+              "definition": "http://hl7.org/fhir/SearchParameter/clinical-patient",
               "type": "reference",
               "extension": [
                 {
@@ -208,7 +85,7 @@
         },
         {
           "type": "FamilyMemberHistory",
-          "profile": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryFamilyMemberHistory",
+          "profile": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFamilyMemberHistory",
           "interaction": [
             {
               "code": "read",
@@ -232,44 +109,7 @@
           "searchParam": [
             {
               "name": "patient",
-              "definition": "http://hl7.org/fhir/SearchParameter/FamilyMemberHistory-subject",
-              "type": "reference",
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "DiagnosticReport",
-          "profile": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareDiagnosticReport",
-          "interaction": [
-            {
-              "code": "read",
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ]
-            },
-            {
-              "code": "search-type",
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ]
-            }
-          ],
-          "searchParam": [
-            {
-              "name": "patient",
-              "definition": "http://hl7.org/fhir/SearchParameter/DiagnosticReport-subject",
+              "definition": "http://hl7.org/fhir/SearchParameter/clinical-patient",
               "type": "reference",
               "extension": [
                 {
@@ -284,14 +124,15 @@
           "type": "Observation",
           "supportedProfile": [
             "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareSmokingStatus",
-            "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareTobaccoSmokingDateCeased",
-            "http://hl7.org/fhir/StructureDefinition/bp",
-            "http://hl7.org/fhir/StructureDefinition/bodyheight",
-            "http://hl7.org/fhir/StructureDefinition/bodyweight",
-            "http://hl7.org/fhir/StructureDefinition/heartrate",
-            "http://hl7.org/fhir/StructureDefinition/bmi",
+            "http://hl7.org.au/fhir/StructureDefinition/au-bloodpressure",
+            "http://hl7.org.au/fhir/StructureDefinition/au-bodyheight",
+            "http://hl7.org.au/fhir/StructureDefinition/au-bodyweight",
+            "http://hl7.org.au/fhir/StructureDefinition/au-heartrate",
+            "http://hl7.org.au/fhir/StructureDefinition/au-bmi",
             "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareWaistCircumference",
-            "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAbsoluteCVDRisk"
+            "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAbsoluteCVDRisk",
+            "https://aehrc.com/fhir/StructureDefinition/AUItem715Cholesterol",
+            "https://aehrc.com/fhir/StructureDefinition/AUItem715HDLCholesterol"
           ],
           "interaction": [
             {
@@ -316,7 +157,7 @@
           "searchParam": [
             {
               "name": "patient",
-              "definition": "http://hl7.org/fhir/SearchParameter/Observation-subject",
+              "definition": "http://hl7.org/fhir/SearchParameter/clinical-patient",
               "type": "reference",
               "extension": [
                 {
