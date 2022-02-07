@@ -3,7 +3,7 @@
 # │  supported properties, see: https://fshschool.org/docs/sushi/configuration/                    │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: au.csiro.fhir.au-item-715
-canonical: https://aehrc.com/fhir/item715
+canonical: https://aehrc.com/fhir
 name: item-715-data
 title: Aboriginal and Torres Strait Islander health check
 status: draft
@@ -26,6 +26,6 @@ dependencies:
 menu:
   Home: index.html
   Artifacts: artifacts.html
-  Capability: CapabilityStatement-AUItem715SearchRequirementDescription.html
+  Capability: CapabilityStatement-AUItem715SearchRequirement.html
   MBS 715 Form: Questionnaire-mbs715.html
 
