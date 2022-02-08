@@ -79,7 +79,7 @@ Requirements for 715 form pre-poulation
 * rest.resource[3].searchParam[0].extension[0].url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[3].searchParam[0].extension[0].valueCode = #SHALL
 * rest.resource[3].searchParam[1].name = "code"
-* rest.resource[3].searchParam[1].definition = "http://hl7.org/fhir/SearchParameter/Observation-code"
+* rest.resource[3].searchParam[1].definition = "http://hl7.org/fhir/SearchParameter/clinical-code"
 * rest.resource[3].searchParam[1].type = #token
 * rest.resource[3].searchParam[1].extension[0].url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[3].searchParam[1].extension[0].valueCode = #SHALL
