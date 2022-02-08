@@ -13,9 +13,9 @@ Usage: #definition
 * format[1] = #xml
 
 * rest.mode = #server
-/** rest.documentation = """
+* rest.documentation = """
 Requirements for 715 form pre-poulation
-"""*/
+"""
 
 * rest.security.cors = true
 * rest.security.service = http://terminology.hl7.org/CodeSystem/restful-security-service#SMART-on-FHIR
