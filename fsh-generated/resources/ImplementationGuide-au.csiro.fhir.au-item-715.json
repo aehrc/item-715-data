@@ -3,7 +3,7 @@
   "id": "au.csiro.fhir.au-item-715",
   "url": "https://aehrc.com/fhir/ImplementationGuide/au.csiro.fhir.au-item-715",
   "version": "0.1.0",
-  "name": "item715data",
+  "name": "AUItem715",
   "title": "Aboriginal and Torres Strait Islander health check",
   "status": "draft",
   "publisher": "CSIRO",
@@ -70,13 +70,6 @@
         },
         "name": "Item 715 Search Requirement",
         "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "Questionnaire/iLTCF"
-        },
-        "exampleBoolean": false,
-        "name": "interRAI Long-Term Care Facilities Assessment Form"
       },
       {
         "reference": {

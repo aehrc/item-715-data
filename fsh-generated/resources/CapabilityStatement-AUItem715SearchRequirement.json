@@ -168,7 +168,7 @@
             },
             {
               "name": "code",
-              "definition": "http://hl7.org/fhir/SearchParameter/Observation-code",
+              "definition": "http://hl7.org/fhir/SearchParameter/clinical-code",
               "type": "token",
               "extension": [
                 {
