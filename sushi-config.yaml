@@ -4,7 +4,7 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: au.csiro.fhir.au-item-715
 canonical: https://aehrc.com/fhir
-name: item-715-data
+name: AUItem715
 title: Aboriginal and Torres Strait Islander health check
 status: draft
 version: 0.1.0
