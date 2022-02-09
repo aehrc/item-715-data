@@ -3,6 +3,6 @@ This implementation guide contains a SMART form conceptualisation of an Aborigin
 Specifically included in the implementation guide are:
 * Questionnaire resource defining the form content and structure
 * CapabilityStatement resource defining the required FHIR API interactions for prepopulation
-* Additional FHIR profile resources required for prepoulation
+* Additional resource profiles required for prepoulation
 * High-level logical architecture for SMART form implementation
 

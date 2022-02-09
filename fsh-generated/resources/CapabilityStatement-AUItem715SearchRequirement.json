@@ -34,7 +34,22 @@
       "resource": [
         {
           "type": "Patient",
-          "profile": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCarePatient",
+          "profile": "https://aehrc.com/fhir/StructureDefinition/AUItem715Patient",
+          "interaction": [
+            {
+              "code": "read",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Practitioner",
+          "profile": "http://hl7.org.au/fhir/StructureDefinition/au-practitioner",
           "interaction": [
             {
               "code": "read",
@@ -202,6 +217,70 @@
               "name": "populate",
               "definition": "http://hl7.org/fhir/uv/sdc/OperationDefinition/Questionnaire-populate",
               "documentation": "Population operation for referenced or supplied questionnaire"
+            }
+          ]
+        },
+        {
+          "type": "QuestionnaireResponse",
+          "profile": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse",
+          "interaction": [
+            {
+              "code": "read",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "code": "search-type",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "code": "create",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "code": "update",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "code": "delete",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "patient",
+              "definition": "http://hl7.org/fhir/SearchParameter/QuestionnaireResponse-patient",
+              "type": "reference",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
             }
           ]
         }

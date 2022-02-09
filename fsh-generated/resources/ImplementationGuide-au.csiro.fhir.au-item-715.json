@@ -66,6 +66,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/AUItem715Patient"
+        },
+        "name": "AU Item 715 Patient",
+        "description": "An AU Primary Care Patient extended to included additional Must Support Flags required for AU Item 715.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "CapabilityStatement/AUItem715SearchRequirement"
         },
         "name": "Item 715 Search Requirement",
@@ -84,11 +92,6 @@
       "title": "Table of Contents",
       "generation": "html",
       "page": [
-        {
-          "nameUrl": "index.html",
-          "title": "Home",
-          "generation": "markdown"
-        },
         {
           "nameUrl": "architecture.html",
           "title": "Architecture",
