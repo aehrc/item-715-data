@@ -24,7 +24,7 @@ dependencies:
 # │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
-  Overview: index.html
+  Home: index.html
   Health Check Form: Questionnaire-mbs715.html
   Capability: CapabilityStatement-AUItem715SearchRequirement.html
   Artifacts: artifacts.html
