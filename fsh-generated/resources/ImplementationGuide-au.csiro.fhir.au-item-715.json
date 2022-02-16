@@ -93,13 +93,13 @@
       "generation": "html",
       "page": [
         {
-          "nameUrl": "architecture.html",
-          "title": "Architecture",
+          "nameUrl": "index.html",
+          "title": "Home",
           "generation": "markdown"
         },
         {
-          "nameUrl": "overview.html",
-          "title": "Overview",
+          "nameUrl": "architecture.html",
+          "title": "Architecture",
           "generation": "markdown"
         }
       ]
