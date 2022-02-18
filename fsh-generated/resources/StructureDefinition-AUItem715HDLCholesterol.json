@@ -88,44 +88,44 @@
         "min": 2
       },
       {
-        "id": "Observation.code.coding:CholesterolLOINC",
+        "id": "Observation.code.coding:HDLCholesterolLOINC",
         "path": "Observation.code.coding",
-        "sliceName": "CholesterolLOINC",
+        "sliceName": "HDLCholesterolLOINC",
         "min": 1,
         "max": "1",
         "mustSupport": true
       },
       {
-        "id": "Observation.code.coding:CholesterolLOINC.system",
+        "id": "Observation.code.coding:HDLCholesterolLOINC.system",
         "path": "Observation.code.coding.system",
         "min": 1,
-        "patternUri": "http://loinc.org"
+        "fixedUri": "http://loinc.org"
       },
       {
-        "id": "Observation.code.coding:CholesterolLOINC.code",
+        "id": "Observation.code.coding:HDLCholesterolLOINC.code",
         "path": "Observation.code.coding.code",
         "min": 1,
-        "patternCode": "14646-4"
+        "fixedCode": "14646-4"
       },
       {
-        "id": "Observation.code.coding:CholesterolSNOMED",
+        "id": "Observation.code.coding:HDLCholesterolSNOMED",
         "path": "Observation.code.coding",
-        "sliceName": "CholesterolSNOMED",
+        "sliceName": "HDLCholesterolSNOMED",
         "min": 1,
         "max": "1",
         "mustSupport": true
       },
       {
-        "id": "Observation.code.coding:CholesterolSNOMED.system",
+        "id": "Observation.code.coding:HDLCholesterolSNOMED.system",
         "path": "Observation.code.coding.system",
         "min": 1,
-        "patternUri": "http://snomed.info/sct"
+        "fixedUri": "http://snomed.info/sct"
       },
       {
-        "id": "Observation.code.coding:CholesterolSNOMED.code",
+        "id": "Observation.code.coding:HDLCholesterolSNOMED.code",
         "path": "Observation.code.coding.code",
         "min": 1,
-        "patternCode": "166832000"
+        "fixedCode": "166832000"
       },
       {
         "id": "Observation.subject",
@@ -173,13 +173,13 @@
         "id": "Observation.valueQuantity.system",
         "path": "Observation.valueQuantity.system",
         "min": 1,
-        "patternUri": "http://unitsofmeasure.org"
+        "fixedUri": "http://unitsofmeasure.org"
       },
       {
         "id": "Observation.valueQuantity.code",
         "path": "Observation.valueQuantity.code",
         "min": 1,
-        "patternCode": "mmol/L"
+        "fixedCode": "mmol/L"
       }
     ]
   }

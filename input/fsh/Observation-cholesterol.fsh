@@ -26,13 +26,13 @@ Description: "Cholesterol observation"
     CholesterolSNOMED 1..1 MS
 
 * code.coding[CholesterolLOINC].system 1..1
-* code.coding[CholesterolLOINC].system = $LNC
+* code.coding[CholesterolLOINC].system = $LNC (exactly)
 * code.coding[CholesterolLOINC].code 1..1
-* code.coding[CholesterolLOINC].code = #14647-2 //Cholesterol [Moles/volume] in Serum or Plasma
+* code.coding[CholesterolLOINC].code = #14647-2 (exactly) //Cholesterol [Moles/volume] in Serum or Plasma
 * code.coding[CholesterolSNOMED].system 1..1
-* code.coding[CholesterolSNOMED].system = $SCT
+* code.coding[CholesterolSNOMED].system = $SCT (exactly)
 * code.coding[CholesterolSNOMED].code 1..1
-* code.coding[CholesterolSNOMED].code = #412808005 //Serum total cholesterol measurement (procedure)
+* code.coding[CholesterolSNOMED].code = #412808005 (exactly) //Serum total cholesterol measurement (procedure)
 
 * subject 1.. MS
 
@@ -41,6 +41,6 @@ Description: "Cholesterol observation"
 * valueQuantity.value 1..
 * valueQuantity.unit 1..
 * valueQuantity.system 1..
-* valueQuantity.system = $UCUM
+* valueQuantity.system = $UCUM (exactly)
 * valueQuantity.code 1..
-* valueQuantity.code = #mmol/L
+* valueQuantity.code = #mmol/L (exactly)

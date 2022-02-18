@@ -22,17 +22,17 @@ Description: "HDL Cholesterol observation"
 * code.coding ^slicing.ordered = false
 
 * code.coding contains
-    CholesterolLOINC 1..1 MS and 
-    CholesterolSNOMED 1..1 MS
+    HDLCholesterolLOINC 1..1 MS and 
+    HDLCholesterolSNOMED 1..1 MS
 
-* code.coding[CholesterolLOINC].system 1..1
-* code.coding[CholesterolLOINC].system = $LNC
-* code.coding[CholesterolLOINC].code 1..1
-* code.coding[CholesterolLOINC].code = #14646-4 //Cholesterol in HDL [Moles/volume] in Serum or Plasma
-* code.coding[CholesterolSNOMED].system 1..1
-* code.coding[CholesterolSNOMED].system = $SCT
-* code.coding[CholesterolSNOMED].code 1..1
-* code.coding[CholesterolSNOMED].code = #166832000 //Serum high density lipoprotein cholesterol measurement (procedure)
+* code.coding[HDLCholesterolLOINC].system 1..1
+* code.coding[HDLCholesterolLOINC].system = $LNC (exactly)
+* code.coding[HDLCholesterolLOINC].code 1..1
+* code.coding[HDLCholesterolLOINC].code = #14646-4 (exactly) //Cholesterol in HDL [Moles/volume] in Serum or Plasma
+* code.coding[HDLCholesterolSNOMED].system 1..1
+* code.coding[HDLCholesterolSNOMED].system = $SCT (exactly)
+* code.coding[HDLCholesterolSNOMED].code 1..1
+* code.coding[HDLCholesterolSNOMED].code = #166832000 (exactly) //Serum high density lipoprotein cholesterol measurement (procedure)
 
 * subject 1.. MS
 
@@ -41,6 +41,6 @@ Description: "HDL Cholesterol observation"
 * valueQuantity.value 1..
 * valueQuantity.unit 1..
 * valueQuantity.system 1..
-* valueQuantity.system = $UCUM
+* valueQuantity.system = $UCUM (exactly)
 * valueQuantity.code 1..
-* valueQuantity.code = #mmol/L
+* valueQuantity.code = #mmol/L (exactly)

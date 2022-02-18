@@ -99,13 +99,13 @@
         "id": "Observation.code.coding:CholesterolLOINC.system",
         "path": "Observation.code.coding.system",
         "min": 1,
-        "patternUri": "http://loinc.org"
+        "fixedUri": "http://loinc.org"
       },
       {
         "id": "Observation.code.coding:CholesterolLOINC.code",
         "path": "Observation.code.coding.code",
         "min": 1,
-        "patternCode": "14647-2"
+        "fixedCode": "14647-2"
       },
       {
         "id": "Observation.code.coding:CholesterolSNOMED",
@@ -119,13 +119,13 @@
         "id": "Observation.code.coding:CholesterolSNOMED.system",
         "path": "Observation.code.coding.system",
         "min": 1,
-        "patternUri": "http://snomed.info/sct"
+        "fixedUri": "http://snomed.info/sct"
       },
       {
         "id": "Observation.code.coding:CholesterolSNOMED.code",
         "path": "Observation.code.coding.code",
         "min": 1,
-        "patternCode": "412808005"
+        "fixedCode": "412808005"
       },
       {
         "id": "Observation.subject",
@@ -173,13 +173,13 @@
         "id": "Observation.valueQuantity.system",
         "path": "Observation.valueQuantity.system",
         "min": 1,
-        "patternUri": "http://unitsofmeasure.org"
+        "fixedUri": "http://unitsofmeasure.org"
       },
       {
         "id": "Observation.valueQuantity.code",
         "path": "Observation.valueQuantity.code",
         "min": 1,
-        "patternCode": "mmol/L"
+        "fixedCode": "mmol/L"
       }
     ]
   }
