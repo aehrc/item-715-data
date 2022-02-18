@@ -1,8 +1,8 @@
-Instance: AUItem715SearchRequirement
+Instance: AUItem715PrepopulationRequirement
 InstanceOf: CapabilityStatement
-Title: "Item 715 Search Requirement"
+Title: "AU Item 715 Prepopulation Requirement"
 Usage: #definition
-* name = "AUItem715SearchRequirement"
+* name = "AUItem715PrepopulationRequirement"
 * description = "Requirements for MBS 715 item form pre-population."
 * status = #draft
 * experimental = true
@@ -14,7 +14,7 @@ Usage: #definition
 
 * rest.mode = #server
 * rest.documentation = """
-Requirements for 715 form pre-poulation
+Requirements for 715 form prepopulation
 """
 
 * rest.security.cors = true
@@ -36,12 +36,9 @@ Requirements for 715 form pre-poulation
 
 * rest.resource[+].type = #Condition
 * rest.resource[=].profile = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareCondition"
-* rest.resource[=].interaction[0].code = #read
+* rest.resource[=].interaction[0].code = #search-type
 * rest.resource[=].interaction[0].extension[0].url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].interaction[0].extension[0].valueCode = #SHALL
-* rest.resource[=].interaction[1].code = #search-type
-* rest.resource[=].interaction[1].extension[0].url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
-* rest.resource[=].interaction[1].extension[0].valueCode = #SHALL
 * rest.resource[=].searchParam[0].name = "patient"
 * rest.resource[=].searchParam[0].definition = "http://hl7.org/fhir/SearchParameter/clinical-patient"
 * rest.resource[=].searchParam[0].type = #reference
@@ -50,12 +47,9 @@ Requirements for 715 form pre-poulation
 
 * rest.resource[+].type = #FamilyMemberHistory
 * rest.resource[=].profile = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFamilyMemberHistory"
-* rest.resource[=].interaction[0].code = #read
+* rest.resource[=].interaction[0].code = #search-type
 * rest.resource[=].interaction[0].extension[0].url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].interaction[0].extension[0].valueCode = #SHALL
-* rest.resource[=].interaction[1].code = #search-type
-* rest.resource[=].interaction[1].extension[0].url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
-* rest.resource[=].interaction[1].extension[0].valueCode = #SHALL
 * rest.resource[=].searchParam[0].name = "patient"
 * rest.resource[=].searchParam[0].definition = "http://hl7.org/fhir/SearchParameter/clinical-patient"
 * rest.resource[=].searchParam[0].type = #reference
@@ -73,7 +67,7 @@ Requirements for 715 form pre-poulation
 * rest.resource[=].supportedProfile[7] = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAbsoluteCVDRisk"
 * rest.resource[=].supportedProfile[8] = "https://aehrc.com/fhir/StructureDefinition/AUItem715Cholesterol"
 * rest.resource[=].supportedProfile[9] = "https://aehrc.com/fhir/StructureDefinition/AUItem715HDLCholesterol"
-* rest.resource[=].interaction[0].code = #read
+* rest.resource[=].interaction[0].code = #create
 * rest.resource[=].interaction[0].extension[0].url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].interaction[0].extension[0].valueCode = #SHALL
 * rest.resource[=].interaction[1].code = #search-type
@@ -89,14 +83,6 @@ Requirements for 715 form pre-poulation
 * rest.resource[=].searchParam[1].type = #token
 * rest.resource[=].searchParam[1].extension[0].url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].searchParam[1].extension[0].valueCode = #SHALL
-
-
-// obtain id from launch profile
-* rest.resource[+].type = #Encounter
-* rest.resource[=].profile = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareEncounter"
-* rest.resource[=].interaction[0].code = #read
-* rest.resource[=].interaction[0].extension[0].url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
-* rest.resource[=].interaction[0].extension[0].valueCode = #SHALL
 
 * rest.resource[+].type = #Questionnaire
 * rest.resource[=].operation[0].name = "populate"
@@ -126,8 +112,7 @@ Requirements for 715 form pre-poulation
 * rest.resource[=].searchParam[0].extension[0].url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].searchParam[0].extension[0].valueCode = #SHALL
 
-
-/*
 * rest.interaction[0].code = #batch
+/*For the batch query*/
 * rest.interaction[1].code = #transaction
-*/
+/*For the transaction upload/write-back*/

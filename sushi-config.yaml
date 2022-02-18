@@ -26,6 +26,6 @@ dependencies:
 menu:
   Home: index.html
   Health Check Form: Questionnaire-mbs715.html
-  Capability: CapabilityStatement-AUItem715SearchRequirement.html
+  Capability: CapabilityStatement-AUItem715PrepopulationRequirement.html
   Artifacts: artifacts.html
 

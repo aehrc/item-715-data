@@ -1,8 +1,8 @@
 {
   "resourceType": "CapabilityStatement",
-  "id": "AUItem715SearchRequirement",
-  "url": "https://aehrc.com/fhir/CapabilityStatement/AUItem715SearchRequirement",
-  "name": "AUItem715SearchRequirement",
+  "id": "AUItem715PrepopulationRequirement",
+  "url": "https://aehrc.com/fhir/CapabilityStatement/AUItem715PrepopulationRequirement",
+  "name": "AUItem715PrepopulationRequirement",
   "description": "Requirements for MBS 715 item form pre-population.",
   "status": "draft",
   "experimental": true,
@@ -16,7 +16,7 @@
   "rest": [
     {
       "mode": "server",
-      "documentation": "Requirements for 715 form pre-poulation",
+      "documentation": "Requirements for 715 form prepopulation",
       "security": {
         "cors": true,
         "service": [
@@ -67,15 +67,6 @@
           "profile": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareCondition",
           "interaction": [
             {
-              "code": "read",
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ]
-            },
-            {
               "code": "search-type",
               "extension": [
                 {
@@ -103,15 +94,6 @@
           "type": "FamilyMemberHistory",
           "profile": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFamilyMemberHistory",
           "interaction": [
-            {
-              "code": "read",
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ]
-            },
             {
               "code": "search-type",
               "extension": [
@@ -152,7 +134,7 @@
           ],
           "interaction": [
             {
-              "code": "read",
+              "code": "create",
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
@@ -186,21 +168,6 @@
               "name": "code",
               "definition": "http://hl7.org/fhir/SearchParameter/clinical-code",
               "type": "token",
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "Encounter",
-          "profile": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareEncounter",
-          "interaction": [
-            {
-              "code": "read",
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
@@ -283,6 +250,14 @@
               ]
             }
           ]
+        }
+      ],
+      "interaction": [
+        {
+          "code": "batch"
+        },
+        {
+          "code": "transaction"
         }
       ]
     }

@@ -74,9 +74,9 @@
       },
       {
         "reference": {
-          "reference": "CapabilityStatement/AUItem715SearchRequirement"
+          "reference": "CapabilityStatement/AUItem715PrepopulationRequirement"
         },
-        "name": "Item 715 Search Requirement",
+        "name": "AU Item 715 Prepopulation Requirement",
         "exampleBoolean": false
       },
       {
