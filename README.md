@@ -1,6 +1,5 @@
-# 715 Item Form Data
+# Aboriginal and Torres Strait Islander health check
 
+The continuous integration build of the FHIR implementation guide produced from the content of this repository can be viewed at https://build.fhir.org/ig/aehrc/item-715-data/
 
-Consider lastn operation
-/Observation/$lastn?max=1&patient=Patient/123&code=9279-1,8867-4,85354-9
 

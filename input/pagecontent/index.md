@@ -4,5 +4,5 @@ Specifically included in the implementation guide are:
 * Questionnaire resource defining the form content and structure
 * CapabilityStatement resource defining the required FHIR API interactions for prepopulation
 * Additional resource profiles required for prepoulation
-* High-level logical architecture for SMART form implementation
 
+In the context of this implementation guide, "Must Support" means the elements are required for either searching or prepopulating the form.
