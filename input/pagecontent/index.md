@@ -21,7 +21,7 @@ Specifically included in the implementation guide are:
 
 A prototype has also been developed that implements these features as a proof of concept for how a Smart Form based on a template may be delivered within an existing system. It demonstrates how a Smart Form application can be launched from within a system to display a prepopulated health check that can be subseqently completed and written back to the electronic medical record.
 
-A demonstration of this prototype can be viewed here. 
+A video demonstration of the prototype can be viewed [here](https://youtu.be/zHzRNNeXlLA). 
 
 ### Must Support
 
